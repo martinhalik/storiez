@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Storiez</title>
+		<link rel="stylesheet" href="css/style.css"/>
+		<script type="text/javascript" src="//use.typekit.net/neo6uwx.js"></script>
+		<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+		<script src="js/services.js"></script>
+	</head>
+	<body>
+		<div id="all_label"></div>
+		<section id="landing">
+			<div id="landing_page">
+				<div class="logo" id="logo"></div>
+				telling compelling<br/>
+				<b>Storiez</b><br/>
+				<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACEAAAAcBAMAAAAdLssvAAAAMFBMVEUAAAD///////////////////////////////////////////////////////////87TQQwAAAAD3RSTlMAESIzRFVmd4iZqrvM3e5GKvWZAAABFElEQVQYGQXBoW4TAQAG4O/ajmOBJdUwsvOI1REEWZ8A5hZUH4FDIbZwNehOgWP3Bp1BA3NTRWBQzYIEtXQ0ZS0/3wc6TT7B0ywBr5LU9FI9/grKTV2cXbOTyiUYnbO95CCtpg+/cGfJXlovhti6Rrmg3AyMhrjb4t4pMKmwXQPQ+Q1lDcDzG+i1AFsnGYMLOJonyR/ovM1t5VmSbN6Apn6QcXddK38A5ZLJ4U6Nh2Ow/wVeQvEdNGN4pznnGHwew/siCw7AvIUTuWG/gtkV3L/MN0YVTJdQTG4HfARNBgCdFdjLT4BHC1Dm3xDozk+BWVZ9KM7WfWA3Wb3myTQXANMkSfK3D9CbJUnWhwB0j5N8GAD+Awf+eQWnn8YhAAAAAElFTkSuQmCC"/>
+			</div>
+		</section>
+		<section id="login">
+			<div id="login_page">
+				<div class="logo"><a href="login.html"></a></div>
+				Follow the <b>storiez</b> you've been hearing about.<br/>
+				Share what's important in <b>your life</b>
+				<div id="login_form">
+					<div id="login_user">
+						<img alt="user" id="profile_pic" src=""/>
+						<span id="login_name"></span>
+						<span id="not_a_user">not a 	<span id="login_name_split"></span>
+						?</span>
+					</div>
+					<div id="login_mail_div"></div>
+					<input id="login_mail" type="email" name="email" placeholder="Email adress"/>
+					<input id="login_pass" type="password" name="pass" placeholder="Password"/>
+					<input id="login_username" type="text" name="username" placeholder="Username"/>
+					<button>Press enter to continue <img alt="arrow" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAAY0lEQVQoz2NgwAJWrVrFzkAKAGpIAGJbUjQkAXEDEHsAMSO6JAcQK6HhLKgGEA4CYmZkDXJIkrhwNBCzkaIBhFPAmkjQkEiKhkggZiXW0wFAzERssLphBCueiLMiJeLYcMkBAGtYupyPhne7AAAAAElFTkSuQmCC"/></button>
+				</div>
+				<div id="facebook_form">
+					<p>Your Facebook is full of amazing memories.<br/>Let's start writing storiez by connection your account, </p>
+					<button onClick="FB.login()">Connect with Facebook</button>
+				</div>
+			</div>
+		</section>
+		<section id="title">
+			<div id="title_page">
+				<div id="title_div"></div>
+				<textarea id="title_textarea" placeholder="type your title"></textarea>
+				<!--<p>
+					It's easier to start off the title with Why, What, How of When.
+				</p>-->
+				<button>Press enter to continue <img alt="arrow" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAAY0lEQVQoz2NgwAJWrVrFzkAKAGpIAGJbUjQkAXEDEHsAMSO6JAcQK6HhLKgGEA4CYmZkDXJIkrhwNBCzkaIBhFPAmkjQkEiKhkggZiXW0wFAzERssLphBCueiLMiJeLYcMkBAGtYupyPhne7AAAAAElFTkSuQmCC"/></button>
+			</div>
+		</section>
+		<section id="companions">
+			<div id="companions_page">
+				<p id="companions_title"></p>
+				<div id="tag_friends"></div>
+				<div class="companions_input_div" id="companions_input_div"></div>
+				<input type="text" id="companions_input" placeholder="Who was there with you?"/>
+				<!--<p>"Faithful are the wounds of a friend; but the kisses of an enemy are deceitful." Proverbs 27,6</p>-->
+				<button id='companions_next'>Press enter to continue <img alt="arrow" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAAY0lEQVQoz2NgwAJWrVrFzkAKAGpIAGJbUjQkAXEDEHsAMSO6JAcQK6HhLKgGEA4CYmZkDXJIkrhwNBCzkaIBhFPAmkjQkEiKhkggZiXW0wFAzERssLphBCueiLMiJeLYcMkBAGtYupyPhne7AAAAAElFTkSuQmCC"/></button>
+				<div id="friends"></div>
+			</div>
+		</section>
+		<section id="picture">
+			<div class="loading-bar"></div>
+			<div id="picture_page">
+				<p id="picture_title"></p>
+				<div id="photo_zone">
+					<img src="img/add_picture.png">
+					<input type="file" id="upload_photo">
+					<div class="progress_bar" id="add_photo_progress">
+						<span class="progress"></span>
+					</div>
+					<div id="photo_block">
+						<span>Choose or <span id="upload_span">upload picture</span> as a background of this story</span>
+						<div id="fb_img_block"></div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<div id='editor-controls'>
+			<button class='btn' id="bold_butt" href='#'>B</button><button class='btn' id="italic_butt" href='#'>I</button>
+		</div>
+		<section id="story" tabindex="0">
+			<div id='story_background'>
+			</div>
+			<div id="filter">
+				<div id="list_filters"></div>
+				<button id="story_next">Continue<img alt="arrow" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAAY0lEQVQoz2NgwAJWrVrFzkAKAGpIAGJbUjQkAXEDEHsAMSO6JAcQK6HhLKgGEA4CYmZkDXJIkrhwNBCzkaIBhFPAmkjQkEiKhkggZiXW0wFAzERssLphBCueiLMiJeLYcMkBAGtYupyPhne7AAAAAElFTkSuQmCC"/></button>
+			</div>
+		</section>
+		<section id="write_story">
+			<div class="loading-bar"></div>
+			<div id="story_page">
+				<button id="publish_button"><img src="img/logo_small-black.png" alt="small_black_logo"/><span>Publish Story</span></button>
+				<h1 id="story_title" contenteditable="true"></h1>
+				<div id="story_with">
+					with
+					<div id="story_with_edit" contenteditable ="true"></div>
+				</div>
+				<div id="story_text" contenteditable="true" data-placeholder="Type your text"></div>
+			</div>
+		</section>
+		<section id="published">
+			<div class="black_bg"></div>
+			<div id="logo_menu"></div>
+			<div id="menu">
+				<span><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAPCAYAAADUFP50AAAAz0lEQVQ4y5XSQQsBQRTA8WXlIFEiiqPaiI/iQC4+gbjv0U05iN2Lg4NyQQ7cnBQl5e4gPgafwH9qtrRZZqZ+7TZv3rx5O2sYf4ZVLqVgGjqDhAIeSOskJXGFq5MUwx5P5FSTTGwxgaOaFMIUHRx0qg1wQwMj1eP1sUMdL2RVEl3YWGGNoWq180ePJ+QD1lmoinXe5FE+E96772ocMY8Zxoh7wY38S+ao+b6y6Lv57ahRGbyj64u10QvqMYKWrFjBBQt5iqXYWPUuwygi82vdG4NxRMLcaY4OAAAAAElFTkSuQmCC"/>New Story</span>
+				<span><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAFCAYAAABxeg0vAAAAYElEQVQY02NgAAJ1Lc1IIN4NxDuA2IwBHwAqsALiNUDMBsTiQHwUiPnwaSgD4kAkfj8QH4faCMKngfgwEF8F4giYDauhNogB8TFkG4BsCyCWAWlCtiUaatouXH4AqQHRAMHeH6jrcTzzAAAAAElFTkSuQmCC"/>Log out</span>
+			</div>
+			<div id="published_page">
+				<div id="published_user"><img src=""><span class="bold"></span></div>
+				<h1 id="published_title"></hi>
+			</div>
+		</section>
+		<script src="js/script.js"></script>
+	</body>
+</html>
